@@ -1,0 +1,46 @@
+.p {
+  color: rgb(234, 177, 21);
+  font-size: 18px;
+}
+h3 {
+  color: rgb(234, 85, 21);
+  font-size: 18px;
+}
+.travels {
+  color: rgb(150, 0, 0);
+  font-size: 15px;
+}
+body {
+  background: #f2e6d9;
+}
+nav {
+  background: #fbdfb3;
+}
+dt {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+button {
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 6px;
+  background: #f8b359;
+  transition: all 0.2s ease;
+}
+button:active {
+  transform: scale(0.96);
+}
+button:hover {
+  background-color: #e88606;
+}
+a {
+  color: inherit; /* Зберігає колір тексту */
+  text-decoration: none; /* Прибирає підкреслення */
+}
+.dd:hover {
+  color: #e88606;
+}
+.section:hover {
+  font-weight: bold;
+}
