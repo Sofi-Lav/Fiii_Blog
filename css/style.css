@@ -44,3 +44,8 @@ a {
 .section:hover {
   font-weight: bold;
 }
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 100;
+  font-style: normal;
+}
