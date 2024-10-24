@@ -1,17 +1,45 @@
 .p {
-  color: rgb(234, 177, 21);
+  color: rgb(255, 119, 0);
   font-size: 18px;
 }
 h3 {
   color: rgb(234, 85, 21);
   font-size: 18px;
 }
+
+.foto_music {
+  max-width: 100%;
+  max-height: 100%;
+  &.countries {
+    &:hover,
+    &:focus {
+      scale: 1;
+      rotate: 0;
+    }
+  }
+  &:hover,
+  &:focus {
+    scale: 0.75;
+    rotate: 350deg;
+  }
+}
+
+li {
+  list-style: none;
+}
+
 .travels {
   color: rgb(150, 0, 0);
   font-size: 15px;
 }
 body {
-  background: #f2e6d9;
+  background: rgb(255, 242, 120);
+  background: linear-gradient(
+    203deg,
+    rgba(255, 242, 120, 1) 0%,
+    rgba(255, 188, 120, 1) 35%,
+    rgba(255, 168, 164, 1) 100%
+  );
 }
 nav {
   background: #fbdfb3;
@@ -27,16 +55,53 @@ button {
   border-radius: 6px;
   background: #f8b359;
   transition: all 0.2s ease;
+  &:hover {
+    background-color: #e88606;
+  }
+  &:active {
+    transform: scale(0.96);
+  }
+  &.button-go-home {
+    color: #d61515;
+    font-size: 16px;
+    padding: 12px 22px;
+    border-radius: 12px;
+    background: #ffdc41;
+    transition: all 0.2s ease;
+    margin-right: 250px;
+    &:hover {
+      background-color: #ffffff;
+      color: #e88606;
+      font-size: 18px;
+    }
+    &:active {
+      transform: scale(0.96);
+    }
+  }
+  &.button-go-current {
+    color: #d61515;
+    font-size: 16px;
+    padding: 12px 22px;
+    border-radius: 12px;
+    background: #ffdc41;
+    transition: all 0.2s ease;
+    &:hover {
+      background-color: #ffffff;
+      color: #e88606;
+      font-size: 18px;
+    }
+    &:active {
+      transform: scale(0.96);
+    }
+  }
 }
-button:active {
-  transform: scale(0.96);
-}
-button:hover {
-  background-color: #e88606;
-}
+
 a {
   color: inherit; /* Зберігає колір тексту */
   text-decoration: none; /* Прибирає підкреслення */
+  &.active {
+    color: #e88606;
+  }
 }
 .dd:hover {
   color: #e88606;
